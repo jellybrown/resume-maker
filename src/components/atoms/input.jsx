@@ -1,10 +1,15 @@
 import React from 'react';
+import styled from 'styled-components';
+const StyledInput = styled.input`
+    border:none;
+    padding:2rem;
+`
 
-const Input = () => {
+const Input = ({children}) => {
     return (
-        <div>
-            
-        </div>
+        <>
+        <StyledInput>{children}</StyledInput>
+        </>
     );
 };
 
